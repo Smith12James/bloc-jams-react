@@ -1,32 +1,51 @@
-.App {
-  text-align: center;
+.logo {
+  position: center;
+  margin: 20px;
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 130px;
+  color: #0000ff ;
+  transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  -webkit-transform:rotate(-15deg);
+  margin-left: 400px;
+  margin-top: -30px;
+  -webkit-text-stroke: 1px #0065ff;
+  -webkit-filter: drop-shadow(2px 2px 20px #0400ff);
+  z-index: 20;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.windows .logo {
+  -webkit-text-stroke: 4px #0050ff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: #383838;
+  font-family: courier;
+}
+
+ul {
+  position: absolute;
+  list-style-type: none;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+li {
+  float: left;
+  font-color: white;
+  }
+
+li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li a:hover {
+  background-color: #111;
 }

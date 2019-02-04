@@ -8,13 +8,15 @@ import Library from './components/Library';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <header>
-          <nav>
-            <Link to='/'>Landing</Link>
-            <Link to='/Library'>Library</Link>
+          <nav align="center">
+            <ul>
+              <li><a href='/' className="land">Home</a></li>
+              <li><a href='/Library' className="lib">Library</a></li>
+            </ul>
           </nav>
-          <h1>Bloc Jams</h1>
+          <h1 className="logo">Bloc Jams</h1>
         </header>
         <main>
           <Route exact path="/" component={Landing} />
